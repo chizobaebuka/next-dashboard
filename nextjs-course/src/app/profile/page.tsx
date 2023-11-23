@@ -10,14 +10,15 @@ export default function Profile() {
         <div>
             <h1>my list of profiles</h1>
             <div>
-                    <Link href='profil/1' >Profile 1</Link>
-                    <Link href='profil/2' >Profile 1</Link>
-                    <Link href={{
-                        pathname: "/profile/3",
-                        query: {
-                            username: "profile 3 description",
-                            age: 25,
-                            
+                    <Link href='/profile/1' >Profile 1</Link>
+                    <Link href='/profile/2' >Profile 1</Link>
+                    <Link 
+                        prefetch={false}
+                        href={{
+                            pathname: "/profile/3",
+                            query: {
+                                username: "profile 3 description",
+                                age: 25,
                         }
                     }}>
                             <div>Profile 3 description</div>
